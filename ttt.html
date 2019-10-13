@@ -9,14 +9,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <title>test</title>
+    <link href="https://fonts.googleapis.com/css?family=Charm&display=swap" rel="stylesheet">
+    <title>รัชกาลที่ ๒</title>
     <style>
-        head {
-            height: 100px;
+        @import 'https://fonts.googleapis.com/css?family=Kanit|Prompt';
+
+        .head {
+            font-family: 'Charm', cursive;
+            text-shadow: 0 0 0.2em black, 0 0 0.2em black, 0 0 0.2em black;
+            color: white;
         }
 
-        #blue {
-            background-color: blue;
+        .head1 {
+            font-family: 'Charm', cursive;
+            color: black;
+        }
+
+        .txt2 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+        }
+
+        .txt1 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 45%;
+        }
+
+        #white {
+            background-color: grey;
         }
 
         .dropdown {
@@ -47,16 +69,27 @@
             display: block;
         }
 
-        h2 {
-            text-align: center;
+        body {
+            background-image: url("img/backg.jpg");
+        }
+
+        div {
+            background-color: lightgoldenrodyellow;
+        }
+
+        .footer {
+            height: 50px;
+            width: 100%;
+            background-color: #FFDFDF;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="head">
-            <h1>Project</h1>
+        <div>
+            <br />
+            <h1 class="head">ประวัติศาสตร์ไทย สมัยราชวงศ์จักรี</h1>
         </div>
         <ul class="nav nav-tabs">
             <li class="active">
@@ -80,10 +113,19 @@
                 </div>
             </li>&nbsp;&nbsp;&nbsp;
             <li>
-                <a href="#">Profile</a>
+                <a href="#">Member</a>
             </li>
-        </ul>
-        <h2>Content 1</h2>
+        </ul><br>
+        <div align="center">
+            <h2 class="head1">Content</h2>
+        </div>
+        <div class="txt2">
+            <p>EiEi</p>
+        </div>
+    </div>
+    <div class="footer" align="center">
+        <a href="index.html">Home&emsp;</a>
+        <a href="">Member</a>
     </div>
 </body>
 
