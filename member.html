@@ -69,6 +69,40 @@
             display: block;
         }
 
+        .dropup {
+            position: relative;
+            display: inline-block;
+            background-color: #FFDFDF;
+        }
+
+        .dropup-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            bottom: 20px;
+            z-index: 1;
+        }
+
+        .dropup-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropup-content a:hover {
+            background-color: #ccc
+        }
+
+        .dropup:hover .dropup-content {
+            display: block;
+        }
+
+        .dropup:hover .dropbtn {
+            background-color: #2980B9;
+        }
+
         body {
             background-image: url("img/backg.jpg");
         }
@@ -92,60 +126,68 @@
             <h1 class="head">ประวัติศาสตร์ไทย สมัยราชวงศ์จักรี</h1>
         </div>
         <ul class="nav nav-tabs">
-            <li class="active">
-                <a href="index.html">หน้าหลัก</a>
-            </li>&nbsp;&nbsp;&nbsp;
-            <li>
-                <div class="dropdown">
-                    <a>รัชสมัย</a>
-                    <div class="dropdown-content">
-                        <a href="no1.html">ร.1</a>
-                        <a href="no2.html">ร.2</a>
-                        <a href="no3.html">ร.3</a>
-                        <a href="no4.html">ร.4</a>
-                        <a href="no5.html">ร.5</a>
-                        <a href="no6.html">ร.6</a>
-                        <a href="no7.html">ร.7</a>
-                        <a href="no8.html">ร.8</a>
-                        <a href="no9.html">ร.9</a>
-                        <a href="no10.html">ร.10</a>
+                <li class="active">
+                    <a href="index.html">หน้าหลัก</a>
+                </li>&nbsp;&nbsp;&nbsp;
+                <li>
+                    <a href="member.html">ผู้จัดทำ</a>
+                </li>&nbsp;&nbsp;&nbsp;
+                <li>
+                    <div class="dropdown">
+                        <a>รัชสมัย ↓</a>
+                        <div class="dropdown-content">
+                            <a href="no1.html">ร.1</a>
+                            <a href="no2.html">ร.2</a>
+                            <a href="no3.html">ร.3</a>
+                            <a href="no4.html">ร.4</a>
+                            <a href="no5.html">ร.5</a>
+                            <a href="no6.html">ร.6</a>
+                            <a href="no7.html">ร.7</a>
+                            <a href="no8.html">ร.8</a>
+                            <a href="no9.html">ร.9</a>
+                            <a href="no10.html">ร.10</a>
+                        </div>
                     </div>
-                </div>
-            </li>&nbsp;&nbsp;&nbsp;
-            <li>
-                <a href="member.html">ผู้จัดทำ</a>
-            </li>
-        </ul><br>
+                </li>
+            </ul><br>
         <div align="center">
             <h2 class="head1">คณะผู้จัดทำ</h2>
             <hr>
             <h3><i class="head1">สมาชิกคนที่ 1</i></h3>
-            <img src="img/poro.jpg" alt=""><br><br>
+            <img src="img/poro.jpg" style="max-width:100%;height:auto;height: 720px;width: 540px;" alt=""><br><br>
             <p class="head1">นายภานุวัฒน์ ศรีจันทร์วิจิตร์</p>
-            <p class="head1">รหัสนักศึกษา 61070160</p><hr>
+            <p class="head1">รหัสนักศึกษา 61070160</p>
+            <hr>
             <h3><i class="head1">สมาชิกคนที่ 2</i></h3>
-            <img src="img/guy.jpg" alt=""><br><br>
+            <img src="img/guy.jpg" style="max-width:100%;height:auto;height: 720px;width: 540px;" alt=""><br><br>
             <p class="head1">นายรัญชน์พล ทองวัฒนานนท์</p>
-            <p class="head1">รหัสนักศึกษา 61070183</p><hr>
+            <p class="head1">รหัสนักศึกษา 61070183</p>
+            <hr>
             <h3><i class="head1">สมาชิกคนที่ 3</i></h3>
-            <img src="img/ryu.jpg" alt=""><br><br>
+            <img src="img/ryu.jpg" style="max-width:100%;height:auto;height: 720px;width: 540px;" alt=""><br><br>
             <p class="head1">นายพัชร์ชวิชญ์ หมื่นสุนทร</p>
-            <p class="head1">รหัสนักศึกษา 61070134</p><hr>
+            <p class="head1">รหัสนักศึกษา 61070134</p>
+            <hr><br>
         </div>
     </div>
     <div class="footer" align="center">
         <a href="index.html">หน้าหลัก&emsp;</a>
         <a href="member.html">ผู้จัดทำ&emsp;</a>
-        <a href="no1.html">ร.1&emsp;</a>
-        <a href="no2.html">ร.2&emsp;</a>
-        <a href="no3.html">ร.3&emsp;</a>
-        <a href="no4.html">ร.4&emsp;</a>
-        <a href="no5.html">ร.5&emsp;</a>
-        <a href="no6.html">ร.6&emsp;</a>
-        <a href="no7.html">ร.7&emsp;</a>
-        <a href="no8.html">ร.8&emsp;</a>
-        <a href="no9.html">ร.9&emsp;</a>
-        <a href="no10.html">ร.10</a>
+        <div class="dropup">
+                <a>รัชสมัย ↑</a>
+                <div class="dropup-content">
+                    <a href="no1.html">ร.1</a>
+                    <a href="no2.html">ร.2</a>
+                    <a href="no3.html">ร.3</a>
+                    <a href="no4.html">ร.4</a>
+                    <a href="no5.html">ร.5</a>
+                    <a href="no6.html">ร.6</a>
+                    <a href="no7.html">ร.7</a>
+                    <a href="no8.html">ร.8</a>
+                    <a href="no9.html">ร.9</a>
+                    <a href="no10.html">ร.10</a>
+                </div>
+            </div>
     </div>
 </body>
 
