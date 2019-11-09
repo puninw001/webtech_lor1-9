@@ -66,6 +66,39 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
+        .dropup {
+            position: relative;
+            display: inline-block;
+            background-color: #FFDFDF;
+        }
+
+        .dropup-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            bottom: 20px;
+            z-index: 1;
+        }
+
+        .dropup-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropup-content a:hover {
+            background-color: #ccc
+        }
+
+        .dropup:hover .dropup-content {
+            display: block;
+        }
+
+        .dropup:hover .dropbtn {
+            background-color: #2980B9;
+        }
 
         body {
             background-image: url("img/backg.jpg");
@@ -95,7 +128,7 @@
             </li>&nbsp;&nbsp;&nbsp;
             <li>
                 <div class="dropdown">
-                    <a>รัชสมัย</a>
+                    <a>รัชสมัย ↓</a>
                     <div class="dropdown-content">
                         <a href="no1.html">ร.1</a>
                         <a href="no2.html">ร.2</a>
@@ -185,16 +218,21 @@
     <div class="footer" align="center">
         <a href="index.html">หน้าหลัก&emsp;</a>
         <a href="member.html">ผู้จัดทำ&emsp;</a>
-        <a href="no1.html">ร.1&emsp;</a>
-        <a href="no2.html">ร.2&emsp;</a>
-        <a href="no3.html">ร.3&emsp;</a>
-        <a href="no4.html">ร.4&emsp;</a>
-        <a href="no5.html">ร.5&emsp;</a>
-        <a href="no6.html">ร.6&emsp;</a>
-        <a href="no7.html">ร.7&emsp;</a>
-        <a href="no8.html">ร.8&emsp;</a>
-        <a href="no9.html">ร.9&emsp;</a>
-        <a href="no10.html">ร.10</a>
+        <div class="dropup">
+            <a>รัชสมัย ↑</a>
+            <div class="dropup-content">
+                <a href="no1.html">ร.1</a>
+                <a href="no2.html">ร.2</a>
+                <a href="no3.html">ร.3</a>
+                <a href="no4.html">ร.4</a>
+                <a href="no5.html">ร.5</a>
+                <a href="no6.html">ร.6</a>
+                <a href="no7.html">ร.7</a>
+                <a href="no8.html">ร.8</a>
+                <a href="no9.html">ร.9</a>
+                <a href="no10.html">ร.10</a>
+            </div>
+        </div>
     </div>
 </body>
 
