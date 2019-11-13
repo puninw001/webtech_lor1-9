@@ -10,7 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Charm&display=swap" rel="stylesheet">
-    <title>หน้าหลัก</title>
+    <title>สมาชิก</title>
     <style>
         @import 'https://fonts.googleapis.com/css?family=Kanit|Prompt';
 
@@ -22,6 +22,11 @@
 
         .head1 {
             font-family: 'Charm', cursive;
+            color: black;
+        }
+
+        .head2 {
+            font-family: 'Chakra Petch', sans-serif;
             color: black;
         }
 
@@ -181,6 +186,10 @@
             <p class="head1">นายสิรภพ รักเกื้อ</p>
             <p class="head1">รหัสนักศึกษา 61070241</p></a>
             <hr><br>
+            <a href="https://github.com/puninw001/webtech_lor1-9/" onmouseout="swapimg1()" onmouseover="swapimg2()"><h3><i class="head2">Github</i></h3>
+            <img src="img/g.png" style="max-width:100%;height:auto;height: 200px;width: 200px;" alt="" id="im"><br><br>
+            </a>
+            <hr><br>
         </div>
     </div>
     <div class="footer" align="center">
@@ -203,6 +212,16 @@
                 </div>
             </div>
     </div>
+    <script>
+        function swapimg1() {
+            var box = document.getElementById("im");
+            box.src = "img/g.png";
+        }
+        function swapimg2() {
+            var box = document.getElementById("im");
+            box.src = "img/g2.png";
+        }
+    </script>
 </body>
 
 </html>
